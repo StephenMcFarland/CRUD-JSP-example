@@ -8,8 +8,10 @@ public class UserDao {
 public static Connection getConnection(){
 	Connection con=null;
 	try{
-		Class.forName("com.mysql.jdbc.Driver");
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","","");
+		 Class.forName("org.postgresql.Driver");
+		//Class.forName("com.mysql.jdbc.Driver");
+		 con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","user1", "user1");
+		//con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","","");
 	}catch(Exception e){System.out.println(e);}
 	return con;
 }
