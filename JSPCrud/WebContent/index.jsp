@@ -11,5 +11,10 @@
 <a href="adduserform.jsp">Add User</a>
 <a href="viewusers.jsp">View Users</a>
 
+
+
+ 
+<% out.print(2*5); %>  
+
 </body>
 </html>
