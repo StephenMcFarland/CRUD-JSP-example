@@ -1,11 +1,14 @@
 package com.javatpoint.dao;
-import java.sql.*;
+//import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.jsoup.select.Evaluator.Class;
+import org.postgresql.PGConnection;
+
 import com.javatpoint.bean.User;
 public class UserDao {
-public static Connection getConnection(){
+public static PGConnection getConnection(){
 	Connection con=null;
 	try{
 		 Class.forName("org.postgresql.Driver");
